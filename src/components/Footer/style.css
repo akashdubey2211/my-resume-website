@@ -1,0 +1,16 @@
+footer {
+    width: 100%;
+    padding: 10px 0;
+    text-align: center;
+  }
+  
+  footer a{
+    max-width: 60px;
+  }
+  
+  footer a:not(:last-child) {
+    margin-right: 10px;
+  }
+  a{
+      color: #09015f;
+  }
