@@ -32,5 +32,6 @@ p{
   font-family:  'Roboto Condensed', sans-serif;
 }
 h1,h2{
-  font-family:  'Montserrat Subrayada', sans-serif;
+  font-family:  'Roboto Condensed', sans-serif;
+  font-weight: bolder;
 }

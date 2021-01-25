@@ -7,8 +7,8 @@ const Home = () => {
             <div className="title">
                 <h1>
                     <p>Hi,</p>
-                    <p>I'm <span className="span">Akash</span>Dubey</p>
-                    <p>MERN <span className="span">Developer</span></p>
+                    <p>I'm <span className="span">Akash</span> Dubey</p>
+                    <p>MERN <span className="span">Stack</span> Developer</p>
                 </h1>
                 <br/>
             <Link to="/about">
@@ -23,5 +23,7 @@ const Home = () => {
         </div>
     )
 }
+
+
 
 export default Home;

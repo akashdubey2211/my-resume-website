@@ -4,32 +4,72 @@
   
   .skills h1 {
     margin-bottom: 20px;
+    text-align: center;
   }
   
-  .content {
-    display: grid;
-    font-size: 24px;
-    grid-template-columns: 1fr 1fr;
-  }
-  
-  .content div {
-    margin-bottom: 25px;
-    margin-left: 28px;
-  }
-  
-  .content strong {
-    line-height: 25px;
-    padding-bottom: 15px;
-    display: block;
-  }
-  
-  .content li {
-    margin: 0;
-    margin-bottom: 10px;
-  }
-  
-  @media (min-width: 800px) {
-    .content {
-      grid-template-columns: 1fr 1fr 1fr;
+  @keyframes load{
+    from {
+      width: 0%
     }
   }
+  @-webkit-keyframes load{
+    from {
+      width: 0%
+    }
+  }
+  @-moz-keyframes load{
+    from {
+      width: 0%
+    }
+  }
+  @-o-keyframes load{
+    from {
+      width: 0%
+    }
+  }
+  
+  .bar{
+    background-color: #EEE;
+    padding: 2px;
+    border-radius: 15px;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #FFF;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+  }
+  .bar::before{
+    content:  attr(data-skill);
+    background-color: #19456b;
+    display: inline-block;
+    padding: 5px 0 5px 10px;
+    border-radius: inherit;
+    animation: load 2s 0s;
+    -webkit-animation: load 2s 0s;
+    -moz-animation: load 2s 0s;
+    -o-animation: load 2s 0s;
+  }
+  
+  .bar.front::before{
+    background-color: #0a043c;
+  }
+  .bar.back::before{
+    background-color: #09015f;
+  }
+  
+  .bar.learning::before{
+    width: calc(20% - 10px);
+  }
+  .bar.basic::before{
+    width: calc(40% - 10px);
+  }
+  .bar.intermediate::before{
+    width: calc(60% - 10px);
+  }
+  .bar.advanced::before{
+    width: calc(80% - 10px);
+  }
+  .bar.expert::before{
+    width: calc(100% - 10px);
+  }
+  

@@ -4,36 +4,20 @@ import './style.css'
 const Skills = () => {
     return (
          <div className="skills">
-      <h1>Skills</h1>
+  
       <div className="content">
-        <div>
-          <strong>Languages:</strong>
-          <li>CSS3</li>
-          <li>HTML5</li>
-          <li>Node.js</li>
-          <li>JavaScript</li>
-        </div>
-        <div>
-          <strong>Libraries:</strong>
-          <li>Bootstrap</li>
-          <li>Express.js</li>
-          <li>Material-ui</li>
-          <li>React.js</li>
-        </div>
-        <div>
-          <strong>Tools:</strong>
-          <li>Eslint</li>
-          <li>Webpack</li>
-          <li>Chrome Dev</li>
-          <li>Git & Github</li>
-        </div>
-        <div>
-          <strong>Uint Test:</strong>
-          <li>Jest</li>
-          <li>Enzyme</li>
-          <li>React-test</li>
-          <li>SupperTest</li>
-        </div>
+      <h1>SKILL SET</h1>
+  
+  
+    <div class="bar front expert" data-skill="HTML5"></div>
+    <div class="bar front advanced" data-skill="CSS"></div>
+    <div class="bar front advanced" data-skill="JS"></div>
+    <div class="bar back basic" data-skill="ReactJS"></div>
+    <div class="bar back intermediate" data-skill="NodeJS"></div>
+    <div class="bar front advanced" data-skill="EXPRESS.JS"></div>
+    <div class="bar back basic" data-skill="MongoDB"></div>
+    <div class="bar back intermediate" data-skill="MERN Stack Skills"></div>
+    <div class="bar front advanced" data-skill="GITHUB"></div>
       </div>
     </div>
     )
