@@ -6,6 +6,7 @@ import GitHubIcon from '@material-ui/icons/GitHub';
 const Footer = () => {
     return (
        <footer>
+           <p> ALL RIGHTS RESERVED 2021 @ DEVELOPED BY ME</p>
            <a href="https://www.linkedin.com/in/akash-dubey-1040791a7/">
                <LinkedInIcon/>
            </a>
